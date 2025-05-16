@@ -1,9 +1,11 @@
 parameters:
-    checkMissingIterableValueType: false
     level: 8
+    treatPhpDocTypesAsCertain: false
     paths:
         - ./
     excludePaths:
         - %rootDir%/../../../vendor/*
         - %rootDir%/../../../tests/*
     ignoreErrors:
+        -
+            identifier: missingType.iterableValue
